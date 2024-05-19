@@ -1,5 +1,3 @@
-import "./App.css";
-
 import DataDisplay from "./components/dashboard";
 
 function App() {
