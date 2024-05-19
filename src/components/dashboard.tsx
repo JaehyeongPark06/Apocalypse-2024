@@ -1,18 +1,20 @@
-import React, { useEffect, useState } from "react";
+import Header from "./header";
+import Humidities from "./humidities";
+import Stats from "./stats";
+import Temperatures from "./temps";
 
-import { fetchData } from "../utils/network";
-
-const DataDisplay: React.FC = () => {
-  const [data, setData] = useState<string>("Loading...");
-
-  useEffect(() => {
-    fetchData().then(setData);
-  }, []);
-
+const DataDisplay = () => {
   return (
-    <div className="p-4 bg-blue-100 rounded-lg">
-      <h1 className="text-lg font-bold">ESP32 Data</h1>
-      <p>{data}</p>
+    <div className="relative overflow-auto w-full h-full grid-pattern py-4">
+      <Header />
+      <div className="w-full h-full p-4 flex flex-col gap-8 justify-center items-center">
+        <div className="custom-gradient absolute -top-48 z-10 h-36 w-3/4 max-w-6xl opacity-100 blur-[200px]" />
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 w-full place-items-center">
+          <Temperatures />
+          <Humidities />
+        </div>
+        <Stats />
+      </div>
     </div>
   );
 };
