@@ -44,7 +44,7 @@ const Adr = () => {
   }, []);
 
   return (
-    <div className="shadow-md p-6 bg-gradient-to-t from-[#1a1030] to-[#1e0151] rounded-md gap-4 flex flex-col w-full max-w-barbod-xl min-w-0">
+    <>
       <div className="flex flex-col gap-4 justify-center items-center">
         <h1 className="text-white font-semibold drop-shadow-[0_0_4px_#fcf139]">
           Angle (°)
@@ -77,7 +77,7 @@ const Adr = () => {
           )}
         </article>
       </div>
-    </div>
+    </>
   );
 };
 
