@@ -9,3 +9,7 @@ Code for web dashboard of project "DUAL ZOMBIE DEFENSE HQ" for HackClub's Apocal
 - Webpage 1: Turns temperature and humidity into a graph and checks if zombie was captured (updates every second for temperature and humidity, every second for zombie if zombie not captured, if zombie captured, checks again in 20 seconds)
 
 - Webpage 2: Retrieves angle and distance and plots it on a point in a semicircle (updates every second for all 3)
+
+Hardware (Webpage 1): https://github.com/qcoral/apocalypse-project-2024
+
+Hardware (Webpage 2): https://github.com/Ninjago77/apocalypse
